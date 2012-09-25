@@ -5,8 +5,8 @@
 * @package  AjaxSearchCtrl
 *
 * @author       Coroico - www.modx.wangba.fr
-* @version      1.9.2
-* @date         05/12/2010
+* @version      1.9.3
+* @date         26/09/2012
 *
 * Purpose:
 *    The AjaxSearchCtrl class contains the logic and synchronisation between model and views

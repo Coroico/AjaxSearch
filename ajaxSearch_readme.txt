@@ -1,5 +1,5 @@
 
-AjaxSearch Readme version 1.9.2
+AjaxSearch Readme version 1.9.3
 
 ---------------------------------------------------------------
 :: Snippet: AjaxSearch
@@ -8,7 +8,7 @@ AjaxSearch Readme version 1.9.2
         Ajax-driven & Flexible Search form
 
   Version:
-        1.9.2  - 05/12/2010
+        1.9.3  - 26/09/2012
 
   Created by:  Coroico - (coroico@wangba.fr)
   
@@ -457,10 +457,11 @@ The simplest snippet call is [!Ajaxsearch!] without any parameters.
         Maximum number of words for searching - Default: 5
 
 
----- &minChars [ 2 < int < 100 ] (optional)
+---- &minChars [ 1 < int < 100 ] (optional)
         Minimum number of characters to require for a word to be valid for searching.
         Length of each word with $advSearch = 'allwords', 'oneword' or 'nowords'
         Length of the search string with possible spaces with $advSearch = 'exactphrase'
+		Default is 3.
 
 
 ---- &showInputForm [1 | 0] (optional)
