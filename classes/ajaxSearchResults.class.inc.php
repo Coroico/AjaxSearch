@@ -950,12 +950,13 @@ class AjaxSearchResults {
     * Default ouput strip function
     */
     function defaultStripOutput($text) {
+		global $modx;
         if ($text !== '') {
             // $text = $modx->parseDocumentSource($text); // parse document
 
             $text = $this->stripLineBreaking($text);
 
-            $text = $this->stripTags($text);
+            $text = $modx->stripTags($text);
 
             $text = $this->stripJscripts($text);
 
@@ -969,22 +970,6 @@ class AjaxSearchResults {
     function stripLineBreaking($text) {
 
         $text = preg_replace("'<(br[^/>]*?/|hr[^/>]*?/|/(div|h[1-6]|li|p|td))>'si", ' ', $text);
-        return $text;
-    }
-    /*
-    *  stripTags : Remove MODx sensitive tags
-    */
-    function stripTags($text) {
-
-        $modRegExArray[] = '~\[\[(.*?)\]\]~s';
-        $modRegExArray[] = '~\[\!(.*?)\!\]~s';
-        $modRegExArray[] = '#\[\~(.*?)\~\]#s';
-        $modRegExArray[] = '~\[\((.*?)\)\]~s';
-        $modRegExArray[] = '~{{(.*?)}}~s';
-        $modRegExArray[] = '~\[\*(.*?)\*\]~s';
-        $modRegExArray[] = '~\[\+(.*?)\+\]~s';
-
-        foreach ($modRegExArray as $mReg) $text = preg_replace($mReg, '', $text);
         return $text;
     }
     /*
