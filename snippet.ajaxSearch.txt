@@ -1,5 +1,4 @@
-﻿<?php
-/**
+﻿/**
  * AjaxSearch
  *
  * Ajax and non-Ajax search that supports results highlighting
@@ -9,6 +8,7 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
  * @internal    @properties
  * @internal    @modx_category Search
+ * @internal    @installset base, sample
  *
  * @author      Coroico <coroico@wangba.fr>
  * @date        26/09/2012
@@ -480,4 +480,3 @@ $elapsedTime = $modx->getMicroTime() - $tstart;
 $etime = sprintf("%.4fs",$elapsedTime);
 //$f=fopen('test.txt','a+');fwrite($f,"etime=".$etime."\n\n");
 return $output;
-?>
