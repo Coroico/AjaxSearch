@@ -45,8 +45,14 @@ Many fixes/additions were contributed by mikkelwe/identity/Perrine
 ----------------------------------------------------------------
 :: Changelog:  for more details see www.evo.wangba.fr
 ----------------------------------------------------------------
+  26-september-12 (1.9.3)
+    -- Bug fixing
+	-- Removed ajaxsearch's own striptags functions and substituted the use of $modx->stripTags
+	-- minimum chars allowed to 2
+
   05-december-10 (1.9.2)
     -- Bug fixing
+
   30-august-10 (1.9.2)
     -- Bug fixing
 
