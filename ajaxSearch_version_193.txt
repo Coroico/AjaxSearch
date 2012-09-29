@@ -1,7 +1,7 @@
 
                               AjaxSearch - version 1.9.3
 
-                           Coroico - http://www.modx.wangba.fr
+                           Coroico - http://www.evo.wangba.fr
 
                                 26th of september 2012
 

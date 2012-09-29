@@ -43,10 +43,16 @@ Many fixes/additions were contributed by mikkelwe/identity/Perrine
   Originally based on the FlexSearchForm snippet created by jaredc (jaredc@honeydewdesign.com)
 
 ----------------------------------------------------------------
-:: Changelog:  for more details see www.modx.wangba.fr
+:: Changelog:  for more details see www.evo.wangba.fr
 ----------------------------------------------------------------
+  26-september-12 (1.9.3)
+    -- Bug fixing
+	-- Removed ajaxsearch's own striptags functions and substituted the use of $modx->stripTags
+	-- minimum chars allowed to 2
+
   05-december-10 (1.9.2)
     -- Bug fixing
+
   30-august-10 (1.9.2)
     -- Bug fixing
 
@@ -1682,7 +1688,7 @@ Install it as the search highlight plugin.
 
 2. Documentation : http://wiki.modxcms.com/index.php/AjaxSearch
 
-3. Demo site : http://www.modx.wangba.fr
+3. Demo site : http://www.evo.wangba.fr
 
 4. Bugs & features : http://svn.modxcms.com/jira/browse/AJAXSEARCH
    Don't hesitate to signup for an account to post an issue or a new feature
