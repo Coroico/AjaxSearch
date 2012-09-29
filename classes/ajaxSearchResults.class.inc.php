@@ -4,7 +4,7 @@
 * -----------------------------------------------------------------------------
 * @package  AjaxSearchResults
 *
-* @author       Coroico - www.modx.wangba.fr
+* @author       Coroico - www.evo.wangba.fr
 * @version      1.9.3
 * @date         05/10/2010
 *

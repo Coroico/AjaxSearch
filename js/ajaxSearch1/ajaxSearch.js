@@ -1,6 +1,6 @@
 /*
  * AjaxSearch 1.9.3 - package AjaxSearch 1 - Mootools 1.11
- * author: Coroico - www.modx.wangba.fr - 26/09/2012
+ * author: Coroico - www.evo.wangba.fr - 26/09/2012
  *
  * Licensed under the GPL license: http://www.gnu.org/copyleft/gpl.html
  */
