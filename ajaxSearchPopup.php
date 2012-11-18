@@ -49,7 +49,7 @@ if (isset($_POST['search'])) {
         // Load the custom functions of the custom configuration file if needed
         if ($config) {
             if (substr($config, 0, 6) != "@FILE:") $lconfig = AS_PATH . "configs/{$config}.config.php";
-			else return "<h3>AjaxSearch error: @FILE: prefix not allowed !<br />Check your config parameter or your config file name!</h3>";
+			else return "<h3>AjaxSearch error: @FILE: prefix not allowed!<br />Check your config parameter or your config file name!</h3>";
             if (file_exists($lconfig)) include $lconfig;
             else return "<h3>AjaxSearch error: " . $lconfig . " not found !<br />Check your config parameter or your config file name!</h3>";
         }
@@ -57,7 +57,7 @@ if (isset($_POST['search'])) {
         $as = new AjaxSearch();
         $output = $as->run($tstart, $dcfg);
     }
-    echo $output;
+    echo $output; 
 }
 
 ?>
