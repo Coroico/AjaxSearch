@@ -23,7 +23,7 @@ if (!function_exists('parseUserConfig')) {
 if (isset($_POST['search'])) {
 
     define('AS_VERSION', '1.9.3');
-    define('AS_SPATH', 'assets/snippets/ajaxSearch193/');
+    define('AS_SPATH', 'assets/snippets/ajaxSearch/');
     define('AS_PATH', MODX_BASE_PATH . AS_SPATH);
 
     require_once (MODX_MANAGER_PATH . '/includes/protect.inc.php');
