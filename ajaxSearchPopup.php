@@ -5,8 +5,8 @@
 * ajaxSearchPopup.php
 *
 * @author       Coroico - www.evo.wangba.fr
-* @version      1.9.3
-* @date         26/09/2012
+* @version      1.9.3b
+* @date         20/11/2012
 *
 */
 
@@ -16,7 +16,7 @@
 if (!function_exists('parseUserConfig')) {
     function parseUserConfig($ucfg) {
         preg_match('/&config=`([^`]*)`/', $ucfg, $matches);
-        return $matches[1];
+        return $matches[1]; 
     }
 }
 
@@ -48,7 +48,8 @@ if (isset($_POST['search'])) {
         $config = parseUserConfig((strip_tags($_POST['ucfg'])));
         // Load the custom functions of the custom configuration file if needed
         if ($config) {
-            $lconfig = (substr($config, 0, 6) != "@FILE:") ? AS_PATH . "configs/$config.config.php" : $modx->config['base_path'] . trim(substr($config, 6, strlen($config)-6));
+            if (substr($config, 0, 6) != "@FILE:") $lconfig = AS_PATH . "configs/{$config}.config.php";
+			else return "<h3>AjaxSearch error: @FILE: prefix not allowed !<br />Check your config parameter or your config file name!</h3>";
             if (file_exists($lconfig)) include $lconfig;
             else return "<h3>AjaxSearch error: " . $lconfig . " not found !<br />Check your config parameter or your config file name!</h3>";
         }

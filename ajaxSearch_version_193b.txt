@@ -1,9 +1,9 @@
 
-                              AjaxSearch - version 1.9.3
+                              AjaxSearch - version 1.9.3b
 
                            Coroico - http://www.evo.wangba.fr
 
-                                26th of september 2012
+                                20th of november 2012
 
 The release 1.9.3 provide the correction of the following issues:
 
@@ -28,6 +28,7 @@ See http://bugs.modx.com/issues/3698
 =====================================================================================
 
 Previous versions :
+ - 1.9.3 delivered the 26th of september 2012
  - 1.9.2 delivered the 5th of December 2010 (provided with MODx 1.0.4)
  - 1.9.1 delivered the 30th of August 2010
  - 1.9.0 delivered the 18th of May 2010 (provided with MODx 1.0.4)
