@@ -1,5 +1,5 @@
 
-AjaxSearch Readme version 1.9.3
+AjaxSearch Readme version 1.9.3b
 
 ---------------------------------------------------------------
 :: Snippet: AjaxSearch
@@ -8,7 +8,7 @@ AjaxSearch Readme version 1.9.3
         Ajax-driven & Flexible Search form
 
   Version:
-        1.9.3  - 26/09/2012
+        1.9.3b  - 20/11/2012
 
   Created by:  Coroico - (coroico@wangba.fr)
   
